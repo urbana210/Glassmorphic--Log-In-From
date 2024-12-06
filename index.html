@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+
+    <title>Glass Morphic Log In From </title>
+
+    <!--  CSS link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+   * {
+   
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: #eadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("thumb-1920-249903.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+  .box{
+            width: 400px;
+            height: 450px;
+            border: 2px solid  #625d5d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            background: transparent;
+   }
+          h2{
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+          }
+
+      .inputbox{
+        position: relative;
+        margin: 30px 0;
+        width: 300px;
+        border-bottom: 2px solid#fff;
+      }
+      .inputbox label{
+        position: absolute ;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1em ;
+        pointer-events: none;
+        transition: 0.5s;
+      } 
+
+input:focus ~ label{
+    top: -5px;
+}
+
+input:focus ~ label{
+    top: -5px;
+}
+
+      .inputbox input{
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        padding: 0 35px 0 5px;
+        color: #f7eeee;
+      }
+      .inputbox ion-icon{
+        position: absolute;
+        right: 8px;
+        color: #fff;
+        font-size: 1.2em;
+        top: 20px;
+      }
+
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.forget{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.forget label:nth-child(2){
+    order: 1;
+}
+
+.forget label{
+    display: flex;
+    align-items: center;
+}
+
+.forget label input[ type="checkbox"]{
+    margin-right: 6px
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
+    </style>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+</head>
+<body>
+
+    <div class="box">
+
+        <form action="">
+
+            <h2>Log In From</h2>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="" id="" required>
+                <label for="">E-mail:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="" id="" required>
+                <label for="">Password:</label>
+            </div>
+
+            <div class="forget">
+                <label for="">
+                    <input type="checkbox">Remember me
+                </label>
+                <label for="">
+                    Forgot Password
+                </label>
+            </div>
+            <button> Log In</button>
+            
+
+            <div class="register">
+                <p>Don't have any account ? <a href="">register now</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- java script add -->
+
+   
+
+</body>
+</html>
